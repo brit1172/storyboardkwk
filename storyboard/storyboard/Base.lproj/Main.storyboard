@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="storyboard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Brit's Finsta" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNK-Rs-dUP">
+                                <rect key="frame" x="80" y="94" width="254" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="XNK-Rs-dUP" secondAttribute="height" multiplier="254:37" id="Hdf-IQ-ETL"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ism-Eu-Qn1">
+                                <rect key="frame" x="167" y="1159.5" width="81" height="19"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="person.circle" catalog="system">
+                                    <color key="titleShadowColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Photo on 3-16-20 at 9.32 PM" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EPV-UJ-BQ0">
+                                <rect key="frame" x="-1552.5" y="139" width="3519" height="221"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EPV-UJ-BQ0" secondAttribute="height" multiplier="1080:221" id="MMq-or-pdw"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MAq-Fh-wY7">
+                                <rect key="frame" x="132.5" y="509" width="149" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MAq-Fh-wY7" secondAttribute="height" multiplier="149:34" id="QmH-KB-uBU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yNP-al-bxW">
+                                <rect key="frame" x="175" y="570" width="62" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="5qI-0I-TWn"/>
+                                    <constraint firstAttribute="height" constant="67" id="xIP-eZ-5ar"/>
+                                </constraints>
+                                <state key="normal" title="Continue" backgroundImage="person.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="submitButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X3t-CZ-bvc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.58687725574043925" green="0.88580796632124348" blue="0.85504323183872932" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EPV-UJ-BQ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1aP-dv-hr1"/>
+                            <constraint firstItem="yNP-al-bxW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-1" id="JEG-02-o5d"/>
+                            <constraint firstItem="XNK-Rs-dUP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="Pp9-3s-sot"/>
+                            <constraint firstItem="MAq-Fh-wY7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="78" id="Wrc-jZ-Kre"/>
+                            <constraint firstItem="yNP-al-bxW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="154" id="bhe-jy-2hj"/>
+                            <constraint firstItem="MAq-Fh-wY7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cUm-SH-Hyk"/>
+                            <constraint firstItem="XNK-Rs-dUP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="rZJ-Fo-9kr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XNK-Rs-dUP" secondAttribute="trailing" constant="80" id="u7H-na-xYB"/>
+                            <constraint firstItem="EPV-UJ-BQ0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wef-yq-tVp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="appTitle" destination="XNK-Rs-dUP" id="vBn-iD-yCK"/>
+                        <outlet property="textField" destination="MAq-Fh-wY7" id="nqC-49-QNa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-59.420289855072468" y="117.1875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Photo on 3-16-20 at 9.32 PM" width="1080" height="720"/>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
+    </resources>
+</document>
